@@ -84,7 +84,7 @@ public class TestLambda3 {
         list.forEach(System.out::println);
 
         // 过滤长度>5 的字符串
-        List<String> list1 = filter(Arrays.asList("Hello", "world", "atguigu", "Lambda", "www", "ok"), str -> str.length() > 3);
+        List<String> list1 = filter(Arrays.asList("Hello", "world", "predicate", "Lambda", "www", "ok"), str -> str.length() > 3);
         list1.forEach(System.out::println);
     }
 }
