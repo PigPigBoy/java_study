@@ -2,8 +2,6 @@ package leetcode;
 
 import org.junit.Test;
 
-import java.util.Random;
-
 /**
  * @author: KongKongBaby
  * @create: 2020-05-17 17:45
@@ -33,12 +31,7 @@ public class PalindromeNumber {
 
     @Test
     public void test1() {
-        Random random = new Random();
-        for (int i = 0; i < 100; i++) {
-            int m = random.nextInt(1000000000);
-            System.out.println(m+ ": "+isPalindrome(m));
-        }
-
+        System.out.println(isPalindrome(123321));
     }
 
     public boolean isPalindrome(int x) {
@@ -48,14 +41,11 @@ public class PalindromeNumber {
             return false;
         if (x < 10)
             return true;
-        int a = x;
         int b = 0;
-        while (a > b) {
-//            System.out.println("a=" + a + ",b=" + b);
-            b = a % 10 + b * 10;
-            a /= 10;
+        while (x > b) {
+            b = x % 10 + b * 10;
+            x /= 10;
         }
-//        System.out.println("a=" + a + ",b=" + b);
-        return (a == b || a > 0 && b > 0 && a == b / 10) ? true : false;
+        return x == b || x == b / 10;
     }
 }
