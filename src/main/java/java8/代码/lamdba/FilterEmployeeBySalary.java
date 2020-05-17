@@ -1,6 +1,6 @@
 package java8.代码.lamdba;
 
-import java8.bean.Employee;
+import bean.Employee;
 
 /**
  * @author: KongKongBaby

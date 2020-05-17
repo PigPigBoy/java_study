@@ -1,12 +1,11 @@
 package java8.代码.lamdba;
 
-import java8.bean.Employee;
+import bean.Employee;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.function.Function;
 
 /**
  * @author: KongKongBaby

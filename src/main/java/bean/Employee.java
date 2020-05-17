@@ -1,4 +1,4 @@
-package java8.bean;
+package bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
