@@ -23,13 +23,15 @@ public class ZigZag {
 
     @Test
     public void test1() {
-        System.out.println(convert("PAYPALISHIRING", 3));
+        System.out.println(convert("helloWorld!", 4));
     }
 
     public String convert(String text, int nRows) {
-        if (null == text)
+        if (nRows < 1)
             return null;
-        if (text.length() < nRows)
+        if (null == text || "".equals(text))
+            return text;
+        if (text.length() <= nRows || nRows == 1)
             return text;
         char[] chars = text.toCharArray();
         int len = chars.length;
